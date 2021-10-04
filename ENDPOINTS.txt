@@ -1,0 +1,49 @@
+
+--PRODUTOS COMPLETOS--
+
+**CONSULTAR TODOS PRODUTOS COMPLETOS**
+/finals -get
+**CONSULTAR POR ID*
+/finals/{id} -get
+**INSERIR**
+/finals -post
+
+ex: {
+        "product": {
+            "productName": "Produto Exemplo",
+            "description": "Descrição exemplo"
+        },
+        "targetMarket": [
+            {
+                "targetMarket": "Ecommerce"
+            },
+            {
+                "targetMarket": "ERP"
+            }
+        ],
+        "stack": [
+            {
+                "stack": "Java 10"
+            },
+            {
+                "stack": "Kotlin"
+            }
+        ]
+    }
+
+**EDITAR**
+/finals -put
+
+**CONSULTA DE UMA STACK**
+/finals/stacksearch?text= -get
+
+**CONSULTA DE DUAS STACKS**
+/finals/stacksearch?text=&text2= -get
+
+ex:/finals/stacksearch2?text=Pig&text2=Kotlin
+
+--OUTROS ENDPOINTS--
+
+/products
+/stacks
+/targets
